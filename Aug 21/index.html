@@ -1,0 +1,113 @@
+<!-- 
+ 
+Types of selectors in CSS:
+
+1. ELement selectors-
+Ex: h1 {
+    color: black; font-size: 10px;
+    }
+
+2. Id selsector-
+Ex: #para1 {
+    color: black; font-size: 10px;
+    }
+
+3. Class selector-
+Ex: .navbar {
+    color: black; font-size: 10px;
+    }
+
+Grouping selectors:
+Ex: h1, h2, p {
+    color: black; font-size: 10px;
+    }
+
+External style sheet:
+Ex: <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+Internal css:
+Ex: <h1 style="color: black; font-size: 10px;"></h1>
+
+Priority of CSS:
+Browser dafault < External CSS < Internal CSS < Inline CSS
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+
+        body {
+            background-image: url(pexels-padrinan-255379.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 280px;
+            width: 500px;
+            background-color: rgba(237, 248, 255, 0.7);
+            border-radius: 8px;
+            border: 0;
+        }
+
+        .email, .password {
+            height: 30px;
+            width: 80%;
+            border: 0;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-weight: 600;
+        }
+
+        .email:focus, .password:focus {
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+
+
+        .btn {
+            height: 40px;
+            width: 20%;
+            border-radius: 5px;
+            border: 0;
+            font-weight: 600;
+            color: rgb(110, 110, 110);
+            background-color: rgb(225, 225, 225);
+        }
+
+        .btn:hover {
+            background-color: rgb(175, 175, 175);
+            color: black;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="form">
+            <input class="email" type="email" placeholder="Email">
+            <br>
+            <input class="password" type="password" placeholder="Password">
+            <br>
+            <input class="btn" type="submit" value="LOGIN">
+        </div>
+    </center>
+</body>
+</html>

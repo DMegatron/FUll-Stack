@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+}
+
+.header {
+    width: 100vw;
+    min-width: 840px; /* Prevents shrinking below 840px */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #3c5a9a;
+    justify-content: space-between;
+}
+
+.form {
+    margin-right: 15%;
+}
+
+.form form {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-container a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+}
+
+.input-container a:hover {
+    color: rgb(216, 216, 216);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input-container label {
+    color: rgb(226, 226, 226);
+}
+
+.logo {
+    margin-left: 15%;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 10px;
+    margin-top: 10px;
+    padding-top: 12px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.form form .login-btn {
+    height: 21.5px;
+    margin-top: 22.5px;
+    background-color: #6178a9;
+    color: white;
+    border: 0;
+}
+
+.page-body {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+    min-width: 840px; /* Prevents shrinking below 840px */
+    height: 91%;
+    background-color: #efefef;
+    overflow: hidden;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    margin-left: 12%;
+    margin-top: 10px;
+}
+
+.left p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    margin-top: 23px;
+}
+
+.right .text {
+    margin-left: 90px;
+}
+
+.right .text h1 {
+    font-size: 30px;
+}
+
+.right .text p {
+    font-size: 20px;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    gap: 17px;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.name input {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.details {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details input {
+    width: 287px;
+    height: 30px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.birthday {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.birthday label {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.birthday input {
+    height: 30px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.birthday-and-why {
+    display: flex;
+    flex-direction: row;
+}
+
+.birthday-and-why a {
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.birthday-and-why a:hover {
+    text-decoration: underline;
+}
+
+.gender label {
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.signup p {
+    margin-top: 0;
+}
+
+.signup-btn {
+    width: 180px;
+    height: 50px;
+    background-color: rgb(95, 154, 74);
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.signup form p a {
+    text-decoration: none;
+}
+
+.signup form p a:hover {
+    text-decoration: underline;
+}
+
+.signup form .celebrity a {
+    text-decoration: underline;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Facebook_Logo_2023.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <p>facebook</p>
+        </div>
+        <div class="form">
+            <form action="#login">
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" required>
+                    <a href="#Forgot-password" class="forgot-password">Forgot Password?</a>
+                </div>
+                <input class="login-btn" type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <div class="page-body">
+        <div class="left">
+            <p>Facebook helps you connect<br>
+                and share with the people in<br>
+                your life.</p>
+            <!-- <img src="Picsart_24-08-22_17-14-28-645.png" alt=""> -->
+        </div>
+        <div class="right">
+            <div class="text">
+                <h1>Create an account</h1>
+                <p>It's free and always will be.</p>
+            </div>
+
+            <div class="signup">
+                <form action="#Create-account">
+                    <div class="name">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="details">
+                        <input class="email" type="text" placeholder="Mobile Number or Email Address"
+                            required>
+                        <input type="password" placeholder="New Password">
+                    </div>
+                    <div class="birthday">
+                        <label for="birthday">Birthday</label>
+                        <div class="birthday-and-why">
+                            <input id="birthday" type="date">
+                            <a href="#">Why do I need to provide my birthday?</a>
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <input name="gender" value="Male" type="radio" required>
+                        <label>Male</label>
+                        <input name="gender" value="Female" type="radio" required>
+                        <label>Female</label>
+                    </div>
+                    <p>By clicking Create Account you agree to our <a href="#Terms">Terms</a> and that you<br>
+                        have read our <a href="#Data-policy">Data Policy</a>, including our <a href="#Cookie-use">Cookie Use</a>. You may<br>
+                        receive SMS Notifications from Facebook and can opt out at any<br>
+                        time.</p>
+                    <input class="signup-btn" type="submit" value="Create an account">
+                    <p class="celebrity"><a href="#Create-a-page">Create a Page</a> for a celebrity, band or business.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

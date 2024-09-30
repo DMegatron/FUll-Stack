@@ -1,0 +1,38 @@
+<!-- 
+ 
+Attributes of cookies:
+   1. expires: It maintains the state of a cookie up to the specified date and time.
+   2. max-age: It maintains the state of a cookie up to the specified time. Here, time is given in seconds.
+   3. path: It expands the scope of the cookie to all the pages of a website.
+   4. domain: It is used to specify the domain for which the cookie is valid.
+
+Methods of JavaScript session storage:
+    1. setItem(): It is used to store the data in the session storage.
+    2. getItem(): It is used to retrieve the data from the session storage.
+    3. removeItem(): It is used to remove the data from the session storage.
+    4. clear(): It is used to remove all the data from the session storage.
+
+Write a code using HTML and JS to store username and password in browser session and as soon as the user taps on the logout button, password should be delated
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="password" placeholder="Password">
+        <input type="text">
+    </form>
+</body>
+<script>
+    document.cookie = "name=Soujatya Bhunia";
+    sessionStorage.setItem("age", 21);
+</script>
+</html>

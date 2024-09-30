@@ -1,0 +1,46 @@
+<!-- 
+
+document.getElementBy property:  id, className, innerHTML, textContent, style, src, href, value, title, alt, disabled, checked
+
+Typecasting Function: String(value), Number(value), Boolean(value), parseInt(value, radix), parseFloat(value), toString(), valueOf(), toFixed(digits), toPrecision(digits), toExponential(digits), Date(value)
+
+JS Math Methods: abs(), acos(), acosh(), asin(), asinh(), atan(), atan2(), atanh(), cbrt(), ceil(), clz32(), cos(), cosh(), exp(), expm1(), floor(), fround(), hypot(), imul(), log(), log1p(), log2(), log10(), max(), min(), pow(), random(), round(), sign(), sin(), sinh(), sqrt(), tan(), tanh(), trunc()
+
+JS Event Handler: 
+    1. Mouse Events: onclick, ondblclick, onmousedown, onmouseup, onmouseover, onmousemove, onmouseout, onmouseenter, onmouseleave
+    2. Keyboard Events: onkeydown, onkeypress, onkeyup
+    3. Form Events: onblur, onchange, onfocus, onfocusin, onfocusout, oninput, oninvalid, onreset, onsearch, onselect, onsubmit
+    4. Window Events: onafterprint, onbeforeprint, onbeforeunload, onhashchange, onlanguagechange, onmessage, onmessageerror, onoffline, ononline, onpagehide, onpageshow, onpopstate, onrejectionhandled, onstorage, onunhandledrejection, onunload
+    5. Media Events: onabort, oncanplay, oncanplaythrough, ondurationchange, onemptied, onended, onerror, onloadeddata, onloadedmetadata, onloadstart, onpause, onplay, onplaying, onprogress, onratechange, onseeked, onseeking, onstalled, onsuspend, ontimeupdate, onvolumechange, onwaiting
+    6. Clipboard Events: oncopy, oncut, onpaste
+    7. Drag Events: ondrag, ondragend, ondragenter, ondragexit, ondragleave, ondragover, ondragstart, ondrop
+
+
+    Assignment 1: Write a script to build a tally counter app which can count some activities based on some triggers.
+    Assignment 2: Create a form validation tool using JS which validates the elements of the form such that no field can be empty and password should have minimum 8 characters, 1 upper, 1 lower, 1 special, 1 number. Email should have . and @ in it.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form onsubmit="validate()">
+        <input id="name" type="text" placeholder="Name">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        function validate(){
+            var input = document.getElementById("name").value
+            if(input === "Diptendu Pal"){
+                // alert("Teri maa ki chut")
+                console.log("Teri maa ki chut")
+            }
+        }
+    </script>
+</body>
+</html>

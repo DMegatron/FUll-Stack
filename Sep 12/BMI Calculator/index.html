@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="dark-mode-toggle">☀️</button>
+    <div class="main-body">
+        <h1 style="font-size: 40px;">BMI Calculator</h1>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
+            <p style="font-size: 70px; font-weight: bold; margin: 0;">BMI:&nbsp</p>
+            <p class="bmi" style="font-size: 70px; font-weight: bold; margin: 0; color: rgb(0, 115, 255);">0</p>
+        </div>
+            <div class="input">
+                <div class="height-input">
+                    <input class="weight" type="text" placeholder="Weight">
+                    <select class="weight-unit">
+                        <option value="Kg">Kg</option>
+                        <option value="Pound">Pound</option>
+                        <option value="Ton">Ton</option>
+                    </select>
+                </div>
+
+                <div class="weight-input">
+                    <input class="height" type="text" placeholder="Height">
+                    <select class="height-unit">
+                        <option value="Feet">Feet</option>
+                        <option value="Meters">Meters</option>
+                        <option value="Inches">Inches</option>
+                        <option value="Cm">Cm</option>
+                        <option value="Km">Km</option>
+                    </select>
+                </div>
+            </div>
+            <input class="calculate-btn" type="submit" value="Calculate" onclick="calculate()">
+        <div class="meter">
+            <img src="images/Scale.png" width="400px" class="scale">
+            <img src="images/Gauge.png" width="150px" class="gauge">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

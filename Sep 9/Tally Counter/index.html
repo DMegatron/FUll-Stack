@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="dark-mode-toggle">☀️</button>
+    <h1>Tally Counter</h1>
+    <div id="work-area">
+        <p id="counter"></p>
+        <div id="btn">
+            <button id="inc"><img src="image/minus.png" alt="Decrement" onclick="dec()"></button>
+            <button id="dec"><img src="image/plus.png" alt="Increment" onclick="inc()"></button>
+        </div>
+        <button id="reset" onclick="reset()">Reset</button>
+        <input type="number" id="del" placeholder="Delay In Sec" onclick="stop()">
+        <button id="autoinc" onclick="autoInc()">Auto Increment</button>
+        <button id="autodec" onclick="autoDec()">Auto Decrement</button>
+        <button id="stop" onclick="stop()">Stop</button>
+    </div>
+    <div>
+        <p id="instruction">Increment: Up Arrow&nbsp&nbsp|&nbsp&nbspDecrement: Down Arrow&nbsp&nbsp|&nbsp&nbspReset: r</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

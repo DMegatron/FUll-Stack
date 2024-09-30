@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+
+        .iframe-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .iframe-container a {
+            padding: 5px;
+            font-weight: 600;
+        }
+
+        .rm {
+            width: 600px;
+            height: 400px;
+        }
+
+        .tdl {
+            width: 600px;
+            height: 400px;
+        }
+
+        .pfl {
+            width: 1200px;
+            height: 700px;
+            /* Adjust height as needed */
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px">
+        <tr cellpadding="10px">
+            <td>
+                <div class="iframe-container">
+                    <iframe class="rm" src="https://dmegatron.github.io/resume/"></iframe>
+                    <a href="https://dmegatron.github.io/resume/" target="_blank">Visit Resume</a>
+                </div>
+            </td>
+            <td>
+                <div class="iframe-container">
+                    <iframe class="tdl" src="https://dmegatron.github.io/To-Do-List/"></iframe>
+                    <a href="https://dmegatron.github.io/To-Do-List/" target="_blank">Visit To-Do List</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="iframe-container">
+                    <iframe class="pfl" src="https://dmegatron.github.io/Portfolio/"></iframe>
+                    <a href="https://dmegatron.github.io/Portfolio/" target="_blank">Visit Portfolio</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

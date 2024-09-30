@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#work-area {
+    text-align: center;
+}
+
+#counter {
+    font-size: 100px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    font-size: 5rem;
+    width: 100px;
+    text-align: center;
+}
+
+
+#inc, #dec {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#reset, #autoinc, #autodec, #stop {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#del {
+    width: 210px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#instruction {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    margin-bottom: 0;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+#dark-mode-toggle:active {
+    box-shadow: none;
+}

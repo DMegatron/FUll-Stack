@@ -1,0 +1,83 @@
+<!-- 
+
+In JS this keyword refers to the current object in context. It's value depends on how it is used. In methods , it refers to the object. In global scope, it refers to the global object. This is not a variable, it is a keyword. You can't change the value of this.
+
+Points to ponder:
+        1. When used within a method of an object, this points to the object.
+        2. When used by itself, this points to the global object.
+        3. When used within a function, this typically points to the global object.
+        4. In a function under strict mode, this becomes undefined.
+        5. During an event, this points to the element that triggered the event.
+        6. Methods like call(), and apply() and bind() can reassign this to any desired object.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+<body>
+
+    <input type="submit" id="btn" value="Submit">
+
+    <script>
+
+// Example 1
+
+        const data = {
+            name: 'John',
+            age: 50,
+            display: function() {
+                console.log(this.name);
+            }
+        }
+
+        data.display();
+
+// Example 2
+
+        var hh = "hello";
+        console.log(this.hh);
+
+// Example 3
+
+        var stu_name = "Soujatya";
+        function displ() {
+            const stu_name = "Doe";
+            console.log(this.stu_name);
+        }
+
+        displ();
+
+// Example 4
+
+        let name1 = "Hello";
+        var name2 = "World";
+        console.log(this.name1);
+        console.log(this.name2);
+
+// Example 5
+
+        document.getElementById('btn').addEventListener('click', demo);
+        
+        function demo() {
+            console.log(this.value);
+        }
+
+// Example 6
+
+        function demo1(greetings) {
+            console.log(greetings + " " + this.name);
+        }
+
+        // demo1.call({name: 'John'}, 'Hello');  // Whenever we pass object as an argument, it should be passed like the first argument.
+
+
+        demo1.apply({name: 'John'}, ['Hello']);
+
+    </script>
+</body>
+</html>
